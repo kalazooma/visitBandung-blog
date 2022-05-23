@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap" rel="stylesheet">
+        <title>visitBandung</title>
+        <style>
+            body{
+               background-color: #FCF69C; 
+               font-family: 'poppins',sans-serif;
+            }
+            
+            li{
+                float: left;
+                display: inline;
+            }
+
+            .aboutme{
+                display: block;
+                padding: 10px;
+                text-decoration: none;
+                font-size: 1.3rem;
+                color: #FF6FB5;
+            }
+
+            .feedback{
+                display: block;
+                padding: 14px;
+                text-decoration: none;
+                font-size: 1.7rem;
+                color: #FF6FB5;
+            }
+
+            .itinerary{
+                display: block;
+                padding: 14px;
+                text-decoration: none;
+                font-size: 1.7rem;
+                color: #FF6FB5;
+            }
+
+            .aboutme{
+                display: block;
+                padding: 14px;
+                text-decoration: none;
+                font-size: 1.7rem;
+                color: #FF6FB5;
+            }
+
+            .home{
+                display: block;
+                padding: 14px;
+                text-decoration: none;
+                font-size: 1.7rem;
+                color: #FF6FB5;
+            }
+
+            .logo{
+                color: #FF6FB5;
+                font-weight: bold;
+                padding: 10px;
+                font-size: 2.0rem;
+                text-decoration: none;
+            }
+
+            header{
+                display: flex;
+                justify-content: space-between;
+            }
+
+            form { 
+                margin: 0 auto; 
+                width:500px;
+                text-align: center;
+            }
+
+            label{
+                font-size: 1.3rem;
+            }
+
+            input{
+                border-radius: 10px;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+            }
+
+            select{
+                border-radius: 10px;
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+            }
+        </style>
+    </head>
+    <body>
+
+        <header>
+
+            <a href="index.html" class="logo">visit<span>Bandung</span></a>
+
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="home">Home</a></li>
+                    <li><a href="about.html" class="aboutme">About Me</a></li>
+                    <li><a href="feedback.html" class="feedback">Feedback</a></li>
+                    <li><a href="itinerary.html" class="itinerary">Itinerary</a></li>
+                </ul>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <form action="" >
+            <fieldset style="border-style: insert; border-color: #AB46D2; border-width: 5px; border-radius: 10px;">
+
+                <legend style=" background-color: gray; color: white; padding: 5px 10px; font-size: 1.3rem;">Feedback
+                </legend>
+                    <label for="name"> Name</label>
+                    <input type="">
+                <br>
+                    <label for="name"><br> Email</label>
+                    <input type="email">
+                <br><br>
+                    <label for="birthday">Birthday</label>
+                    <input type="date">
+                <br>
+                    <label for="name"><br> Phone Number</label>
+                    <input type="number">
+                <br><br>
+                <label for="race">Race</label>
+                <select name="race" id="race">
+                    <option value="Malay">Malay</option>
+                    <option value="Indian">Indian</option>
+                    <option value="Chinese">Chinese</option>
+                    <option value="Others">Others</option>
+                </select>
+                <br><br>
+                <label for="gender">Gender</label> 
+                <br><br>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">female</label>
+                <br><br>
+                <label for="file">Insert File</label>
+                <input id="file" type="file" name="file">
+                <br><br>
+                    <label for="name">Feedback</label>
+                    <textarea name="feedback" rows="10" cols="50" style="border-radius: 10px;"></textarea>
+            </fieldset>
+            <input type="submit">
+            <input type="reset">
+        </form>
+    
+    </body>
+</html>
